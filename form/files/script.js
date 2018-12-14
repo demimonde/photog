@@ -8,6 +8,7 @@ goog.require('goog.format.JsonPrettyPrinter')
 goog.require('goog.html.SafeHtml')
 goog.require('goog.events.FileDropHandler')
 goog.require('goog.ui.AnimatedZippy')
+goog.require('goog.ui.ProgressBar')
 // <!-- end production -->
 
 import upload from './upload.js'

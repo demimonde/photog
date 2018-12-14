@@ -18,10 +18,14 @@ const encode = async (file) => {
 
 export default
 async function upload(file) {
+  const el = goog.dom.getElement('d')
+  el.style.visibility = ''
+  const pb = new goog.ui.ProgressBar
+  pb.render(el)
   const res = await upload2(file, (percent) => {
-
+    pb.setValue(percent)
   })
-  debugger
+  el.style.visibility = 'hidden'
   const dem = new goog.format.JsonPrettyPrinter.SafeHtmlDelimiters()
   dem.lineBreak = goog.html.SafeHtml.BR
   dem.space = '&nbsp;'

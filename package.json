@@ -27,6 +27,10 @@
   "homepage": "https://github.com/demimonde/photog#readme",
   "dependencies": {
     "@wrote/read": "1.0.0",
-    "mime-types": "2.1.21"
+    "dist-exiftool": "10.53.0",
+    "mime-types": "2.1.21",
+    "node-exiftool": "2.3.0",
+    "parse-multipart": "1.0.4",
+    "rqt": "3.0.1"
   }
 }

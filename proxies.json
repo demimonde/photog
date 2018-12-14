@@ -1,4 +1,21 @@
 {
   "$schema": "http://json.schemastore.org/proxies",
-  "proxies": {}
+  "proxies": {
+    "AzureMaps": {
+      "matchCondition": {
+        "route": "/map",
+        "methods": [
+          "GET"
+        ]
+      },
+      "backendUri": "https://atlas.microsoft.com/map/static/png",
+      "requestOverrides": {
+        "backend.request.querystring.subscription-key": "%AZURE_MAPS_KEY%",
+        "backend.request.querystring.api-version": "1.0",
+        "backend.request.querystring.center": "request.querystring.center",
+        "backend.request.querystring.width": "250",
+        "backend.request.querystring.height": "250"
+      }
+    }
+  }
 }

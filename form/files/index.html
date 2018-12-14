@@ -8,9 +8,11 @@
 </head>
 
 <body>
-  <div id="drop-zone" class="Drop" style="display:block;">
+  <div id="drop-zone" class="Drop" style="display:inline-block;">
     Drag Files In Here
   </div>
+  <span id="d"></span>
+  <br>
   <input id="file" type="file">
   <a id="btn" href="#">Upload</a>
   <div id="info"></div>
@@ -25,6 +27,7 @@
     goog.require('goog.html.SafeHtml')
     goog.require('goog.events.FileDropHandler')
     goog.require('goog.ui.AnimatedZippy')
+    goog.require('goog.ui.ProgressBar')
  </script>
   <script type="module" src="script.js"></script>
 <!-- end dev -->
