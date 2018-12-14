@@ -1,15 +1,13 @@
 export default async function (context, req) {
-  context.log('JavaScript HTTP trigger function processed a request.')
-
-  if (req.query.name || (req.body && req.body.name)) {
-    context.res = {
-      // status: 200, /* Defaults to 200 */
-      body: `Hello ${req.query.name || req.body.name}`,
-    }
-  } else {
-    context.res = {
-      status: 400,
-      body: 'Please pass a name on the query string or in the request body.',
-    }
+  if (req.method == 'GET') {
+    if (req.body) req.body = req.body.slice(0, 100)
+    if (req.rawBody) req.rawBody = req.rawBody.slice(0, 100)
+    const body = JSON.stringify(req, null, 2)
+    return { body }
+  } else if (req.method == 'POST') {
+    if (req.body) req.body = `${req.body.slice(0, 30)}...`
+    if (req.rawBody) req.rawBody = req.rawBody.slice(0, 200)
+    const body = JSON.stringify(req, null, 2)
+    return { body }
   }
 }

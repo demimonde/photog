@@ -4,17 +4,17 @@
     {
       "authLevel": "anonymous",
       "type": "httpTrigger",
+      "route": "form/{file}",
       "direction": "in",
       "name": "req",
       "methods": [
-        "get",
-        "post"
+        "get"
       ]
     },
     {
       "type": "http",
       "direction": "out",
-      "name": "$return"
+      "name": "res"
     }
   ]
 }

@@ -1,0 +1,42 @@
+.goog-jsonprettyprinter-propertyname {
+  color: #F00;
+}
+
+.goog-jsonprettyprinter-propertyvalue-string {
+  color: #00F;
+}
+
+.goog-jsonprettyprinter-propertyvalue-number {
+  color: #0F0;
+}
+
+.goog-jsonprettyprinter-propertyvalue-boolean {
+  color: #0F0;
+}
+
+.goog-jsonprettyprinter-propertyvalue-null {
+  color: orange;
+}
+.Drop {
+  border: 0.2em dashed salmon;
+  background: #fce0e0;
+  width: 10em;
+  box-sizing: border-box;
+  display: inline;
+}
+.DragActive {
+  opacity: 0.5;
+}
+.Metadata {
+  background-color:#eff0f1;
+}
+.goog-zippy-header img {
+  width: 19px;
+  height: 16px;
+}
+.goog-zippy-expanded img {
+  background-image: url('minus.png');
+}
+.goog-zippy-collapsed img {
+  background-image: url('plus.png');
+}

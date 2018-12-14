@@ -1,0 +1,36 @@
+
+<!doctype HTML>
+<html>
+
+<head>
+  <title>Upload</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div id="drop-zone" class="Drop" style="display:block;">
+    Drag Files In Here
+  </div>
+  <input id="file" type="file">
+  <a id="btn" href="#">Upload</a>
+  <div id="info"></div>
+  <script src="exif2css.js"></script>
+<!-- start dev -->
+  <script src="https://cdn.rawgit.com/google/closure-library/master/closure/goog/base.js"></script>
+  <script>
+    goog.require('goog.dom')
+    goog.require('goog.dom.TagName')
+    goog.require('goog.net.XhrIo')
+    goog.require('goog.format.JsonPrettyPrinter')
+    goog.require('goog.html.SafeHtml')
+    goog.require('goog.events.FileDropHandler')
+    goog.require('goog.ui.AnimatedZippy')
+ </script>
+  <script type="module" src="script.js"></script>
+<!-- end dev -->
+<!-- start production -->
+  <script src="script-closure.js"></script>
+<!-- end production -->
+
+</body>
+</html>
