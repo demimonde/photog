@@ -13,7 +13,7 @@
 
 ## `/mnp`
 
-The mnp function will receive the input and respond with the output.
+![demo](drag.gif)
 
 <p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/2.svg?sanitize=true"></a></p>
 
